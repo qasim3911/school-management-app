@@ -316,32 +316,6 @@ export default function SchoolLoginPage() {
           </button>
         </form>
 
-        {/* Live Supabase Test Credentials */}
-        <div className="pt-4 border-t border-slate-100">
-          <p className="text-[11px] font-bold text-slate-400 uppercase tracking-wider mb-2 text-center">
-            Live Supabase Test Credentials
-          </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
-            <button
-              type="button"
-              onClick={() => handleDemoFill('principal6728@alhadi-edu.pk')}
-              className="p-2.5 rounded-lg bg-emerald-50 hover:bg-emerald-100 border border-emerald-200 text-left transition-colors cursor-pointer"
-            >
-              <p className="font-semibold text-emerald-950 truncate">🏫 Al-Hadi Grammar High</p>
-              <p className="text-[10px] text-emerald-700 font-medium">Status: Approved (Dashboard Access)</p>
-            </button>
-
-            <button
-              type="button"
-              onClick={() => handleDemoFill('qasimtest@gmail.com')}
-              className="p-2.5 rounded-lg bg-amber-50 hover:bg-amber-100 border border-amber-200 text-left transition-colors cursor-pointer"
-            >
-              <p className="font-semibold text-amber-950 truncate">⏳ Qasim Model School</p>
-              <p className="text-[10px] text-amber-700 font-medium">Status: Pending Review (Locked)</p>
-            </button>
-          </div>
-        </div>
-
         {/* Register Your School Link */}
         <div className="pt-2 text-center text-xs text-slate-600">
           <span>Don&apos;t have a registered school yet? </span>

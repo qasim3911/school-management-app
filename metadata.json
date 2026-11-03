@@ -1,0 +1,6 @@
+{
+  "name": "Pakistan School Management SaaS",
+  "description": "Enterprise Multi-School Management System for Pakistan with student admissions, fee challans, exam grading, attendance, payroll, and official PDF documents.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

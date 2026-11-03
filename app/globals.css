@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Noto+Nastaliq+Urdu:wght@400;700&display=swap");
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --primary: #ea580c;
+    --primary-hover: #c2410c;
+    --primary-light: #ffedd5;
+  }
+}
+
+/* Custom Print styles for Official Pakistani School Documents */
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    font-size: 11pt !important;
+  }
+
+  .no-print,
+  nav,
+  aside,
+  header,
+  footer,
+  .print-hide {
+    display: none !important;
+  }
+
+  .print-only {
+    display: block !important;
+  }
+
+  .print-container {
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-shadow: none !important;
+    border: none !important;
+  }
+
+  .page-break {
+    page-break-after: always;
+    break-after: page;
+  }
+
+  @page {
+    size: A4 portrait;
+    margin: 12mm 10mm;
+  }
+}
+
+/* Urdu typography helper */
+.font-urdu {
+  font-family: system-ui, -apple-system, 'Noto Nastaliq Urdu', 'Jameel Noori Nastaleeq', 'Urdu Typesetting', Tahoma, sans-serif;
+  direction: rtl;
+}
+
+/* Tabular figures for all financial & numerical displays */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
